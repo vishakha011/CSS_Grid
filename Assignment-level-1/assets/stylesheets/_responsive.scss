@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .flex-col {
+    flex-flow: column wrap;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .col-span-2 {
+    grid-column: span 1;
+  }
+
+  .toggle:checked ~ .navbar  {
+    display: inline-block;
+  }
+
+}

@@ -1,0 +1,84 @@
+/*
+=============================================================
+Box-sizing
+=============================================================
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+=============================================================
+Custom-Styles
+=============================================================
+*/
+body {
+    font-family: $font;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.2;
+    // padding: 0 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+a {
+    // color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.responsive-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.padding {
+    padding: 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: $text-color;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    margin: 2rem 0;
+    border: 2px solid $text-color;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: rgba($primary-color, 0.1);
+}
+
+.font-0 {
+    font-size: 0;
+}

@@ -1,0 +1,373 @@
+@import "reset";
+@import "variables";
+@import "general";
+@import "base";
+@import "responsive";
+
+/*
+=============================================================
+Header-Section
+=============================================================
+*/
+.header {
+    padding: 1.5rem 10rem;
+    position: absolute;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        position: static;
+        padding: 1.5rem 2rem;
+        .navbar {
+            display: none;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding-top: 100px;
+        }
+        .brand,
+        label {
+        position: relative;
+        z-index: 1;
+        }
+        .nav-menu-item {
+            margin: 20px 0;
+        }
+    }
+    
+    .brand {
+        color: $secondary-color;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 1px 0 3px #fff;
+    }
+    .nav-menu-item {
+        margin-left: 1rem;
+        a {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #7A7471;
+            text-transform: uppercase;
+            &:hover{
+                color: #c06e21;
+            }
+        }
+    }
+}
+
+/* Hamburger Menu */
+label {
+  color: #fff;
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #c06e21;
+    font-size: 32px;
+  }
+}
+
+.toggle {
+  display: none;
+}
+
+
+/*
+=============================================================
+Hero-Section
+=============================================================
+*/
+.hero-section {
+    background-color: #F5E3D7;
+    color: #AAA7A5;
+    .hero {
+        padding-top: 2rem;;
+    }
+    .hero-img {
+        height: 100vh;
+        font-size: 0; 
+    }
+    .sub-heading {
+        text-transform: uppercase;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .hero-heading {
+        color: #514F4E;
+        font-size: 2.5rem;
+        strong {
+            color: $text-color;
+            font-weight: 600;
+        }
+    }
+    
+}
+.desc {
+    margin: 1.2rem 0;
+    line-height: 1.8;
+}
+/*
+=============================================================
+About-Section
+=============================================================
+*/
+.about{
+    h2 {
+        color: $text-color;
+    }
+}
+.section-heading {
+    font-size: 2.5rem;
+    
+}
+
+.about {
+    color: #AAA7A5;
+    .color {
+        color: #c06e21;
+        margin: 1rem 0 2rem 0;
+    }
+}
+
+.img-height {
+    height: 100%;
+    img {
+        height: 100%;
+    }
+}
+
+.my_skills {
+    background-color: #ECAF4E;
+    height: 100%;
+    .skills-set {
+        font-size: 1rem;
+        color: rgb(240, 234, 234);
+        margin: 1rem 0;
+    }
+    .chart {
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding-bottom: 0.8rem;
+        margin-top: 1.5rem;
+        .skill{
+            color: $text-color;
+        }   
+    }
+    .hr {
+        height: 2.5px;
+        width: 100%;
+    }
+    .hr-bar-1 { 
+        background: linear-gradient(to right, #000 90%, #fff 10%);
+    }
+    .hr-bar-2 { 
+        background: linear-gradient(to right, #000 70%, #fff 30%);
+    }
+    .hr-bar-3 { 
+        background: linear-gradient(to right, #000 80%, #fff 20%);
+    }
+
+}
+
+/*
+=============================================================
+Project-Section
+=============================================================
+*/
+.project {
+    display: grid;
+    text-align: center;
+    color: rgba(#fff, 0.8);
+    i {
+        font-size: 2.5rem;
+        margin-bottom: 2.8rem;
+    }
+}
+.project-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.project-text {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.project-1 {
+    background-color: #c06e21;   
+}
+.project-2 {
+    background-color: #FC683E;   
+}
+.project-3 {
+    background-color: #161616;   
+}
+.project-4 {
+    i {
+        color: #393939;
+    }   
+    .project-heading {
+        color: #666666;
+    }
+    .project-text {
+        color: #C9C9C9;
+    }
+}
+
+/*
+=============================================================
+Experience-Section
+=============================================================
+*/
+.experience-section {
+    background-color: #FC683E;
+    align-items: flex-start;
+    .experience-img {
+        height: 22rem;
+    }
+}
+.experience {
+    margin-top: 2rem;
+    justify-content: flex-start;
+    i {
+        font-size: 2rem;
+        position: relative;
+        bottom: 12px;
+    }
+    .details {
+        margin-left: 1rem;
+    }
+    span {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #763434;
+    }
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+    
+}
+
+/*
+=============================================================
+Education-Section
+=============================================================
+*/
+.education-section {
+    background-color: #ECAF4E;
+    span {
+        color: #B08826;
+    }
+}
+
+/*
+=============================================================
+Contact-Section
+=============================================================
+*/
+.contact-section {
+    background-color: #FC683E;
+    
+    .section-heading {
+        margin-bottom: 1rem;
+    }
+    
+    .project-text {
+        margin-bottom: 2rem;
+    }
+
+}
+
+.contact {
+    background-color: #161616;
+    height: 100%;
+    .contact-detail {
+        margin-top: 2rem;
+        p {
+            margin-top: 2rem;
+        }
+        i {
+            margin-right: 1rem;
+        }
+        .active {
+            color: #B08826;
+        }
+    }
+    
+}
+
+form {
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 2rem;
+        background-color: #FC683E;
+        border: 0;
+        border-bottom: 0.5px solid #ECAF4E;
+        padding: 1rem 0;
+        color: rgba(255, 255, 255, 0.527);
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    .submit {
+        background-color: #ffffff;
+        border-radius: 4rem;
+        padding: 1rem 8rem;
+        margin: 0;
+        border: 0;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.548);
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+/*
+=============================================================
+Map-Section
+=============================================================
+*/
+.map-section {
+    background-color: #FC683E;
+    padding: 0;
+    div {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 0;      
+    }
+    iframe {
+    width: 100%;
+    height: 30rem;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.767);
+    }
+}
+
+/*
+=============================================================
+Footer-Section
+=============================================================
+*/
+footer {
+    padding: 8rem 0;
+    color: rgba(#B6AFA9, 0.9);
+    text-align: center;
+    small {
+        font-size: 1.1rem;
+        & span {
+            color: rgba(#FC683E, 0.7);
+        }       
+    }
+    .social-icon {
+        padding-top: 3rem;
+        i {
+        margin-left: 4rem;
+        color: #B6AFA9;
+        &:first-child {
+            margin-left: 0;
+            }
+        }   
+    }
+}
